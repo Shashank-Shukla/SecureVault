@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# Project Development - To-Do Reminder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This `README.md` serves as a reminder for the tasks to be completed in the project tomorrow. Below are the specific tasks that need attention:
 
-Currently, two official plugins are available:
+## Tasks for Tomorrow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. **Add Cursors to All Buttons/Links**
+   - Add CSS cursors for all clickable buttons and links in the application.
+   - This ensures that the user experience is smooth and interactive, providing visual feedback on hover.
 
-## Expanding the ESLint configuration
+### 2. **Create Landing Page**
+   - Develop the landing page for the application.
+   - This should include a clean, appealing design with introductory content about the project, key features, and a clear call-to-action (CTA).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 3. **Implement Login and Authentication**
+   - Add login functionality to the application.
+   - Set up authentication (possibly using JWT tokens or OAuth) to ensure that users can securely log in and access the application.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 4. **Add Skeleton Screen as Preloader**
+   - Create a skeleton screen to be displayed while the main content is loading.
+   - This will act as a placeholder and improve the user experience, especially during data fetching.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 5. **Show Devices Online**
+   - Implement a feature to display which devices are currently online.
+   - This could include information like device status, name, and connection details.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 6. **Fetch Data from JSON (Until APIs Are Available)**
+   - Use a mock JSON file to simulate backend data responses.
+   - This allows for progress on front-end development while the actual APIs are still under development.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 7. **Set Up APIs**
+   - Start developing the backend APIs to fetch and process data.
+   - These should replace the mock JSON data and provide dynamic responses as the project evolves.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Reminder for Tomorrow
+
+These are the primary tasks to focus on in the project tomorrow. Keep in mind the need for careful testing and validation of each feature, ensuring that everything integrates smoothly with existing components.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
